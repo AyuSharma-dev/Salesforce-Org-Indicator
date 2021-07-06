@@ -12,8 +12,9 @@ export function activate(context: vscode.ExtensionContext) {
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
     console.log('Congratulations, your extension "salesforce-org-indicator" is now active!');
+
 	storageManager = new LocalStorageService(context.globalState);
-	refreshInd();
+	refreshInd( context, true );
 
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with registerCommand
@@ -35,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 				title: "Refreshing ORG Indicator",
 				cancellable: true
 				}, () => {
-				return refreshInd();
+				return refreshInd( context, false );
 			});
 		} catch (error) {
 			console.log( 'error-->'+JSON.stringify(error) );
