@@ -6,8 +6,8 @@ export class LocalStorageService {
     
     constructor(private storage: Memento) { }   
     
-    public getValue<T>(key : string) : T{
-        return this.storage.get<T>(key, null);
+    public getValue(key : string) : any{
+        return this.storage.get<any>(key, null);
     }
 
     public setValue<T>(key : string, value : T){

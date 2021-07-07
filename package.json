@@ -47,10 +47,10 @@
 			"title": "Salesforce Org Indicator",
 			"properties": {
 				"extension.soi.explorer.orgHashCodes": {
-				"type": "string",
-				"default": "",
-				"description": "Add or Edit your Org URL to Status Bar hash color. \n To Add your Org use this format-> https://org.my.salesforce.com::Hashcode",
-				"scope": "application"
+					"type": "string",
+					"default": "",
+					"description": "Add or Edit your Org URL to Status Bar hash color. \n To Add your Org use this format-> https://org.my.salesforce.com::Hashcode",
+					"scope": "application"
 				}
 			}
 		}
@@ -77,7 +77,10 @@
 		"vscode-test": "^1.5.2"
 	},
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/AyuSharma-dev/Salesforce-Org-Indicator.git"
-    }
+		"type": "git",
+		"url": "https://github.com/AyuSharma-dev/Salesforce-Org-Indicator.git"
+	},
+	"dependencies": {
+		"yarn": "^1.22.10"
+	}
 }
