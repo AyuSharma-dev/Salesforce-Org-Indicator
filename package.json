@@ -27,7 +27,7 @@
 		"onCommand:sfdx.force.set.default.org"
 	],
 	"main": "./out/extension.js",
-	"icon": "./Images/light-bulb.png",
+	"icon": "Images/light-bulb.png",
 	"galleryBanner": {
 		"color": "black",
 		"theme": "dark"
