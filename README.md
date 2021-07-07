@@ -10,18 +10,18 @@ To make it easier to visualize which Org you are working on Salesforce Org Indic
 
 <br/>
 
-    Using this command you can set color for your current set Org.
+Using this command you can set color for your current set Org.
 
 <br/>
 
-![Refresh Indicator](Images\setIndicator.gif)
+![Set Indicator](Images/setIndicator.gif)
     <br/> <br/> <br/> <br/> 
 
 > SOI: Refresh Indicator For Current ORG
 
 <br/>
 
-    This command also runs on Startup of the VSCode so will handle the Org color at beginning. After you change the Org you can either use this command or can click over the Status bar icon shown in below gif.
+This command also runs on Startup of the VSCode so will handle the Org color at beginning. After you change the Org you can either use this command or can click over the Status bar icon shown in below gif.
 
 <br/>
 
