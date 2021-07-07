@@ -1,70 +1,39 @@
 # salesforce-org-indicator README
 
-This is the README for your extension "salesforce-org-indicator". After writing up a brief description, we recommend including the following sections.
+Its Always painful when you accidentally Pushed an Apex Class over a different Salesforce Org through VSCode. This generally happens when you are working over several different Sandboxes.  
+
+To make it easier to visualize which Org you are working on Salesforce Org Indicator can provide color indicator over the VSCode Status Bar for different Authorized Salesforce Orgs.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+> SOI: Set Indicator For Current ORG <br/> 
 
-For example if there is an image subfolder under your extension project workspace:
+<br/>
 
-\!\[feature X\]\(images/feature-x.png\)
+    Using this command you can set color for your current set Org.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+<br/>
+
+![Refresh Indicator](Images\setIndicator.gif)
+    <br/> <br/> <br/> <br/> 
+
+> SOI: Refresh Indicator For Current ORG
+
+<br/>
+
+    This command also runs on Startup of the VSCode so will handle the Org color at beginning. After you change the Org you can either use this command or can click over the Status bar icon shown in below gif.
+
+<br/>
+
+![Refresh Indicator](Images/refreshIndicator.gif)
+
+<br/>
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+> Salesforce Extension for VSCode is required to run this extension and it only works on the valid SFDX projects with an Authorize Org.
 
-## Extension Settings
+<br/>
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## License
+MIT License
