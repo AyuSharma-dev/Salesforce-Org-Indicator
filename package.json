@@ -1,20 +1,37 @@
 {
 	"name": "salesforce-org-indicator",
 	"displayName": "Salesforce Org-Indicator",
-	"description": "Extension changes Starus Bar color based on the Selected Salesforce Org.",
+	"description": "Extension changes Status Bar color based on the Selected Salesforce Org.",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.57.0"
 	},
+	"author": {
+		"name": "Ayush Sharma"
+	},
 	"categories": [
+		"Programming Languages",
 		"Other"
 	],
+	"keywords": [
+		"salesforce",
+		"apex",
+		"lightning",
+		"programming",
+		"useful"
+	],
+	"publisher": "AyuSharma-dev",
 	"activationEvents": [
 		"onStartupFinished",
 		"onCommand:salesforce-org-indicator.helloWorld",
 		"onCommand:sfdx.force.set.default.org"
 	],
 	"main": "./out/extension.js",
+	"icon": "./Images/light-bulb.png",
+	"galleryBanner": {
+		"color": "black",
+		"theme": "dark"
+	},
 	"contributes": {
 		"commands": [
 			{
@@ -58,5 +75,9 @@
 		"mocha": "^8.4.0",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2"
-	}
+	},
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/AyuSharma-dev/Salesforce-Org-Indicator.git"
+    }
 }
